@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+   android:background="@drawable/images"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1106dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="REGISTRATION" />
+
+        <EditText
+            android:id="@+id/AGE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="49dp"
+            android:ems="10"
+            android:hint="Age" />
+
+        <EditText
+            android:id="@+id/DESIG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/mail"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:hint="Designation" />
+
+        <Spinner
+            android:id="@+id/DEPARTMENT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DESIG"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/JOINDATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DEPARTMENT"
+            android:layout_marginTop="35dp"
+            android:layout_toLeftOf="@+id/textView2"
+            android:ems="10"
+            android:hint="Join Date" />
+
+        <EditText
+            android:id="@+id/SALARY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/JOINDATE"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="Salary"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/EXP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/SALARY"
+            android:layout_below="@+id/SALARY"
+            android:layout_marginTop="41dp"
+            android:ems="10"
+            android:hint="Experience"
+            android:inputType="phone" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/EXP"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="23dp" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup1"
+            android:layout_toRightOf="@+id/EXP"
+            android:text="SUBMIT" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:ems="10"
+            android:hint="name" />
+
+        <EditText
+            android:id="@+id/addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AGE"
+            android:layout_toLeftOf="@+id/textView1"
+            android:ems="10"
+            android:hint="Address" >
+
+            <requestFocus />
+        </EditText>
+
+        <Spinner
+            android:id="@+id/QLF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/namee"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/namee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/addr"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="dob" />
+
+        <EditText
+            android:id="@+id/salarye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/mail"
+            android:layout_below="@+id/QLF"
+            android:ems="10"
+            android:hint="ph" />
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/salarye"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Mail" />
+
+    </RelativeLayout>
+
+</ScrollView>
